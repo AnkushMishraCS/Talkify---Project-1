@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="logo.jfif"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Train+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Talkify - Text to Speech Converter</title>
+  
+</head>
+<body>
+    
+    <h1>Talkify</h1>
+    <h2>Text to Speech Converter </h2>
+    <div class="input-container">
+        <textarea name="" id="input-text" cols="30" rows="10" placeholder="Enter text ....."></textarea>
+        <p class="word-count">0/400</p>
+    </div>
+    <div class="settings-container">
+        
+        <div class="rate">
+            <label for="rate-input">Speed</label>
+            <div>
+                <input type="range" min="0.25" max="2" value="1" step="0.25" id="rate-input" />
+                <p id="rate-indicator">1</p>
+            </div>
+        </div>
+        <div class="volume">
+            <label for="volume-input">Volume</label>
+            <div>
+                <input type="range" min="0" max="10" value="10" step="1" id="volume-input">
+                <p id="volume-indicator">100</p>
+            </div>
+        </div>
+    </div>
+    <div class="voice-options">
+        <label for="voice-options">Choose Speech</label>
+        <select name="" id="">
+        </select>
+    </div>
+    <div class="buttons">
+        <div class="play-btn"><p><i class="fa fa-play-circle"></i>Convert to Speech</p></div> 
+    </div>
+    <footer>
+        <p>Developed by : Ankush Mishra  <a href="https://github.com/AnkushMishraCS" target="_blank"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/in/ankushmishracs/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
